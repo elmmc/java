@@ -1,0 +1,19 @@
+toString()方法
+ toString总是返回 该对象实现类的“类名+@+hashCode”
+也可以再类中重写这个方法，使它输出对象的属性
+
+==&&equals方法
+==运算符 ：1 如果变量是基本数据类型，且值相等，返回true。
+          2 ==不可用于比较没有父子关系的两个对象。
+ example：
+String str1=new String（“hellow”）
+String str2=new String（“hellow”）
+str1==str2 //返回的是false 因为str1和str2不是同一个对象
+String str1=“hellow”
+String str2=new “hell”+“ow”
+这就是相等的
+equals可以重写，来自定义你的比较方法
+
+final修饰符
+  1修饰变量 变量一但获得初始值就不可在改变
+  2
